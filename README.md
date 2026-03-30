@@ -33,6 +33,12 @@ The driver supports:
 
 ---
 
+## HPDL-1414 displays
+
+HPDL-1414 modules are four-digit alphanumerical displays with built-in driver circuitry and an ASCII decoder.
+Each display has 12 pins and requires 10 GPIO pins for control by a MCU.
+While a single HPDL-1414 display can be easily controlled by an Esp32, multiple displays call for the use of output expanders to manage the huge demand of GPIO pins.
+
 ## How the 74HC595 modules work
 
 A **74HC595** is an 8-bit **serial-in / parallel-out** shift register with an output latch. In simple terms:
